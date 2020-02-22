@@ -1,0 +1,51 @@
+<config>
+  {
+    pages: [
+      'pages/home/index.mina',
+      'pages/forum/index.mina',
+    ],
+    subPackages: [{
+      root: 'pages/sub1/',
+      pages: [
+        'one/index.mina',
+      ]},{
+      root: 'pages/sub2/',
+      pages: [
+        'one/index.mina',
+      ]}
+    ],
+    window: {
+      backgroundTextStyle: 'dark',
+      navigationBarBackgroundColor: '#FFFFFF',
+      navigationBarTitleText: '测试号',
+      navigationBarTextStyle: 'black',
+      backgroundColorTop: '#FFFFFF',
+      backgroundColor: '#FAFAFA',
+      backgroundColorBottom: '#FAFAFA',
+    },
+    tabBar: {
+      color: '#abadb3',
+      selectedColor: '#2e3342',
+      backgroundColor: '#FFFFFF',
+      borderStyle: 'white',
+      list: [
+        {
+          pagePath: 'pages/home/index',
+          text: '首页',
+          iconPath: './img/tab-home.png',
+          selectedIconPath: './img/tab-home-active.png',
+        },
+        {
+          pagePath: 'pages/forum/index',
+          text: '次页',
+          iconPath: './img/tab-forum.png',
+          selectedIconPath: './img/tab-forum-active.png',
+        },
+      ],
+    },
+  }
+</config>
+
+<template>
+  <page></page>
+</template>
